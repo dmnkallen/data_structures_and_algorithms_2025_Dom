@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About {{ name }}</title>
+    <meta name="description" content="Personal About Page">
+    <meta name="keywords" content="about, personal, bio">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ name }}</h1>
+    <h2>{{ subtitle }}</h2>
+    <img src="{{ url_for('static', filename='dompic.jpeg') }}" alt="Profile Photo">
+    <p>{{ about_me }}</p>
+    <p><a href="https://www.linkedin.com/in/dominik-allen-a28ab422a" target="_blank">Connect with me on LinkedIn</a></p>
+</body>
+</html>
